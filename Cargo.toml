@@ -1,0 +1,20 @@
+[package]
+name = "redistimeseries"
+version = "0.1.0"
+edition = "2021"
+authors = ["Guy Korland <guy.korland@redis.com>"]
+description = "Time Series for Redis"
+repository = "https://github.com/RedisTimeSeries/RedisTimeSeries"
+readme = "README.md" 
+license = "Redis Source Available License (RSAL)"
+keywords = ["redis", "time-series", "plugin"]
+categories = ["database-implementations"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+name = "timeseries"
+
+[dependencies]
+redis-module = { version="1.0.1", features = ["experimental-api"]}

@@ -22,3 +22,8 @@ venv/
 site/
 /tests/benchmarks/profile_*
 wordlist.dic
+
+
+# Added by cargo
+
+/target
